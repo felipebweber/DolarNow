@@ -14,6 +14,7 @@
 		55E1DD17246B4A3D00804FDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55E1DD16246B4A3D00804FDF /* Assets.xcassets */; };
 		55E1DD1A246B4A3D00804FDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55E1DD18246B4A3D00804FDF /* LaunchScreen.storyboard */; };
 		55E1DD25246B4A3D00804FDF /* DolarNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E1DD24246B4A3D00804FDF /* DolarNowTests.swift */; };
+		55E1DD30246B4CB700804FDF /* DolarNowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E1DD2F246B4CB700804FDF /* DolarNowCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		55E1DD20246B4A3D00804FDF /* DolarNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DolarNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E1DD24246B4A3D00804FDF /* DolarNowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DolarNowTests.swift; sourceTree = "<group>"; };
 		55E1DD26246B4A3D00804FDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55E1DD2F246B4CB700804FDF /* DolarNowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DolarNowCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +81,11 @@
 		55E1DD0C246B4A3A00804FDF /* DolarNow */ = {
 			isa = PBXGroup;
 			children = (
+				55E1DD34246B4D1800804FDF /* Model */,
+				55E1DD33246B4D0C00804FDF /* View */,
+				55E1DD32246B4CF100804FDF /* ViewController */,
 				55E1DD0D246B4A3A00804FDF /* AppDelegate.swift */,
 				55E1DD0F246B4A3A00804FDF /* SceneDelegate.swift */,
-				55E1DD11246B4A3A00804FDF /* ViewController.swift */,
-				55E1DD13246B4A3A00804FDF /* Main.storyboard */,
 				55E1DD16246B4A3D00804FDF /* Assets.xcassets */,
 				55E1DD18246B4A3D00804FDF /* LaunchScreen.storyboard */,
 				55E1DD1B246B4A3D00804FDF /* Info.plist */,
@@ -97,6 +100,30 @@
 				55E1DD26246B4A3D00804FDF /* Info.plist */,
 			);
 			path = DolarNowTests;
+			sourceTree = "<group>";
+		};
+		55E1DD32246B4CF100804FDF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				55E1DD2F246B4CB700804FDF /* DolarNowCollectionViewCell.swift */,
+				55E1DD11246B4A3A00804FDF /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		55E1DD33246B4D0C00804FDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55E1DD13246B4A3A00804FDF /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		55E1DD34246B4D1800804FDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55E1DD30246B4CB700804FDF /* DolarNowCollectionViewCell.swift in Sources */,
 				55E1DD12246B4A3A00804FDF /* ViewController.swift in Sources */,
 				55E1DD0E246B4A3A00804FDF /* AppDelegate.swift in Sources */,
 				55E1DD10246B4A3A00804FDF /* SceneDelegate.swift in Sources */,
