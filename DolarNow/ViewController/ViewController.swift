@@ -9,25 +9,26 @@
 import UIKit
 
 struct CustomData {
-    var title: String
+    var coinCell: String
     var flagImage: UIImage
 }
 
 class ViewController: UIViewController, UICollectionViewDelegate {
     
     var coinManager = CoinManager()
+    var tempCoinModel = [CoinModel]()
     
     fileprivate let data = [
-        CustomData(title: "$", flagImage: #imageLiteral(resourceName: "united-states-of-america-flag-medium")),
-        CustomData(title: "R$", flagImage: #imageLiteral(resourceName: "brazil-flag-medium")),
-        CustomData(title: "€", flagImage: #imageLiteral(resourceName: "euro")),
-        CustomData(title: "£", flagImage: #imageLiteral(resourceName: "united-kingdom-flag-medium")),
-        CustomData(title: "$", flagImage: #imageLiteral(resourceName: "switzerland-flag-medium")),
-        CustomData(title: "$", flagImage: #imageLiteral(resourceName: "argentina-flag-medium")),
-        CustomData(title: "¥", flagImage: #imageLiteral(resourceName: "china-flag-medium")),
-        CustomData(title: "₪", flagImage: #imageLiteral(resourceName: "israel-flag-medium")),
-        CustomData(title: "A$", flagImage: #imageLiteral(resourceName: "australia-flag-medium")),
-        CustomData(title: "$", flagImage: #imageLiteral(resourceName: "canada-flag-medium"))
+        CustomData(coinCell: "$", flagImage: #imageLiteral(resourceName: "united-states-of-america-flag-medium")),
+        CustomData(coinCell: "$", flagImage: #imageLiteral(resourceName: "canada-flag-medium")),
+        CustomData(coinCell: "€", flagImage: #imageLiteral(resourceName: "euro")),
+        CustomData(coinCell: "£", flagImage: #imageLiteral(resourceName: "united-kingdom-flag-medium")),
+        CustomData(coinCell: "$", flagImage: #imageLiteral(resourceName: "argentina-flag-medium")),
+        CustomData(coinCell: "¥", flagImage: #imageLiteral(resourceName: "japan-flag-medium")),
+        CustomData(coinCell: "$", flagImage: #imageLiteral(resourceName: "switzerland-flag-medium")),
+        CustomData(coinCell: "A$", flagImage: #imageLiteral(resourceName: "australia-flag-medium")),
+        CustomData(coinCell: "¥", flagImage: #imageLiteral(resourceName: "china-flag-medium")),
+        CustomData(coinCell: "₪", flagImage: #imageLiteral(resourceName: "israel-flag-medium"))
     ]
 
     @IBOutlet weak var collectionViewDolarNow: UICollectionView!
@@ -36,6 +37,7 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         super.viewDidLoad()
         collectionViewDolarNow.dataSource = self
         collectionViewDolarNow.delegate = self
+        coinManager.delegate = self
         coinManager.fetchCoin()
     }
 
@@ -43,14 +45,13 @@ class ViewController: UIViewController, UICollectionViewDelegate {
 
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return data.count
+        return tempCoinModel.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionViewDolarNow.dequeueReusableCell(withReuseIdentifier: "dolarCollectionViewCell", for: indexPath) as! DolarNowCollectionViewCell
-//        cell.coinLabel.text = "Agora vai"
-    
+        cell.coinValueLabel.text = tempCoinModel[indexPath.item].ask
         cell.data = self.data[indexPath.item]
         return cell
     }
@@ -60,5 +61,14 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let withCell = collectionView.bounds.width
         return CGSize(width: withCell, height: 46)
+    }
+}
+
+extension ViewController: CoinManagerDelegate {
+    func didUpdate(coin: [CoinModel]) {
+        DispatchQueue.main.async {
+            self.tempCoinModel = coin
+            self.collectionViewDolarNow.reloadData()
+        }
     }
 }
