@@ -15,9 +15,11 @@ struct CustomData {
 
 class ViewController: UIViewController, UICollectionViewDelegate {
     
+    var coinManager = CoinManager()
+    
     fileprivate let data = [
-        CustomData(title: "R$", flagImage: #imageLiteral(resourceName: "brazil-flag-medium")),
         CustomData(title: "$", flagImage: #imageLiteral(resourceName: "united-states-of-america-flag-medium")),
+        CustomData(title: "R$", flagImage: #imageLiteral(resourceName: "brazil-flag-medium")),
         CustomData(title: "€", flagImage: #imageLiteral(resourceName: "euro")),
         CustomData(title: "£", flagImage: #imageLiteral(resourceName: "united-kingdom-flag-medium")),
         CustomData(title: "$", flagImage: #imageLiteral(resourceName: "switzerland-flag-medium")),
@@ -34,6 +36,7 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         super.viewDidLoad()
         collectionViewDolarNow.dataSource = self
         collectionViewDolarNow.delegate = self
+        coinManager.fetchCoin()
     }
 
 }

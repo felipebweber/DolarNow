@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55767674246CA9AC0058752B /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55767673246CA9AC0058752B /* CoinManager.swift */; };
+		55767676246CABE90058752B /* CoinDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55767675246CABE90058752B /* CoinDataResponse.swift */; };
+		55767678246CB0150058752B /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55767677246CB0150058752B /* CoinModel.swift */; };
 		55E1DD0E246B4A3A00804FDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E1DD0D246B4A3A00804FDF /* AppDelegate.swift */; };
 		55E1DD10246B4A3A00804FDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E1DD0F246B4A3A00804FDF /* SceneDelegate.swift */; };
 		55E1DD12246B4A3A00804FDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E1DD11246B4A3A00804FDF /* ViewController.swift */; };
@@ -28,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55767673246CA9AC0058752B /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		55767675246CABE90058752B /* CoinDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataResponse.swift; sourceTree = "<group>"; };
+		55767677246CB0150058752B /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		55E1DD0A246B4A3A00804FDF /* DolarNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DolarNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E1DD0D246B4A3A00804FDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55E1DD0F246B4A3A00804FDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +128,9 @@
 		55E1DD34246B4D1800804FDF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				55767673246CA9AC0058752B /* CoinManager.swift */,
+				55767675246CABE90058752B /* CoinDataResponse.swift */,
+				55767677246CB0150058752B /* CoinModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,9 +237,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				55E1DD30246B4CB700804FDF /* DolarNowCollectionViewCell.swift in Sources */,
+				55767676246CABE90058752B /* CoinDataResponse.swift in Sources */,
+				55767674246CA9AC0058752B /* CoinManager.swift in Sources */,
 				55E1DD12246B4A3A00804FDF /* ViewController.swift in Sources */,
 				55E1DD0E246B4A3A00804FDF /* AppDelegate.swift in Sources */,
 				55E1DD10246B4A3A00804FDF /* SceneDelegate.swift in Sources */,
+				55767678246CB0150058752B /* CoinModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
