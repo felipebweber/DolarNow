@@ -66,16 +66,6 @@ final class CoinManager {
             coinModel.append(ils)
         }
         
-//        1-USD
-//        2-CAD
-//        3-EUR
-//        4-GBP
-//        5-ARS
-//        6-JPY
-//        7-CHF
-//        8-AUD
-//        9-CNY
-//        10-ILS
 //        guard let json = try? JSONSerialization.jsonObject(with: coinData, options: []) else { return [nil] }
 //        guard let dictionary = json as? [String: AnyObject] else { return [nil] }
 //        print(dictionary)

@@ -34,7 +34,7 @@
 		55767673246CA9AC0058752B /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
 		55767675246CABE90058752B /* CoinDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataResponse.swift; sourceTree = "<group>"; };
 		55767677246CB0150058752B /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
-		55E1DD0A246B4A3A00804FDF /* DolarNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DolarNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E1DD0A246B4A3A00804FDF /* Quantos Reais.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quantos Reais.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E1DD0D246B4A3A00804FDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55E1DD0F246B4A3A00804FDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		55E1DD11246B4A3A00804FDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		55E1DD16246B4A3D00804FDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55E1DD19246B4A3D00804FDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55E1DD1B246B4A3D00804FDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55E1DD20246B4A3D00804FDF /* DolarNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DolarNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E1DD20246B4A3D00804FDF /* QuantosReaisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuantosReaisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E1DD24246B4A3D00804FDF /* DolarNowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DolarNowTests.swift; sourceTree = "<group>"; };
 		55E1DD26246B4A3D00804FDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55E1DD2F246B4CB700804FDF /* DolarNowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DolarNowCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -78,8 +78,8 @@
 		55E1DD0B246B4A3A00804FDF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				55E1DD0A246B4A3A00804FDF /* DolarNow.app */,
-				55E1DD20246B4A3D00804FDF /* DolarNowTests.xctest */,
+				55E1DD0A246B4A3A00804FDF /* Quantos Reais.app */,
+				55E1DD20246B4A3D00804FDF /* QuantosReaisTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,9 +138,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		55E1DD09246B4A3A00804FDF /* DolarNow */ = {
+		55E1DD09246B4A3A00804FDF /* QuantosReais */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 55E1DD29246B4A3D00804FDF /* Build configuration list for PBXNativeTarget "DolarNow" */;
+			buildConfigurationList = 55E1DD29246B4A3D00804FDF /* Build configuration list for PBXNativeTarget "QuantosReais" */;
 			buildPhases = (
 				55E1DD06246B4A3A00804FDF /* Sources */,
 				55E1DD07246B4A3A00804FDF /* Frameworks */,
@@ -150,14 +150,14 @@
 			);
 			dependencies = (
 			);
-			name = DolarNow;
+			name = QuantosReais;
 			productName = DolarNow;
-			productReference = 55E1DD0A246B4A3A00804FDF /* DolarNow.app */;
+			productReference = 55E1DD0A246B4A3A00804FDF /* Quantos Reais.app */;
 			productType = "com.apple.product-type.application";
 		};
-		55E1DD1F246B4A3D00804FDF /* DolarNowTests */ = {
+		55E1DD1F246B4A3D00804FDF /* QuantosReaisTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 55E1DD2C246B4A3D00804FDF /* Build configuration list for PBXNativeTarget "DolarNowTests" */;
+			buildConfigurationList = 55E1DD2C246B4A3D00804FDF /* Build configuration list for PBXNativeTarget "QuantosReaisTests" */;
 			buildPhases = (
 				55E1DD1C246B4A3D00804FDF /* Sources */,
 				55E1DD1D246B4A3D00804FDF /* Frameworks */,
@@ -168,9 +168,9 @@
 			dependencies = (
 				55E1DD22246B4A3D00804FDF /* PBXTargetDependency */,
 			);
-			name = DolarNowTests;
+			name = QuantosReaisTests;
 			productName = DolarNowTests;
-			productReference = 55E1DD20246B4A3D00804FDF /* DolarNowTests.xctest */;
+			productReference = 55E1DD20246B4A3D00804FDF /* QuantosReaisTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -192,7 +192,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 55E1DD05246B4A3A00804FDF /* Build configuration list for PBXProject "DolarNow" */;
+			buildConfigurationList = 55E1DD05246B4A3A00804FDF /* Build configuration list for PBXProject "QuantosReais" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -205,8 +205,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				55E1DD09246B4A3A00804FDF /* DolarNow */,
-				55E1DD1F246B4A3D00804FDF /* DolarNowTests */,
+				55E1DD09246B4A3A00804FDF /* QuantosReais */,
+				55E1DD1F246B4A3D00804FDF /* QuantosReaisTests */,
 			);
 		};
 /* End PBXProject section */
@@ -259,7 +259,7 @@
 /* Begin PBXTargetDependency section */
 		55E1DD22246B4A3D00804FDF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 55E1DD09246B4A3A00804FDF /* DolarNow */;
+			target = 55E1DD09246B4A3A00804FDF /* QuantosReais */;
 			targetProxy = 55E1DD21246B4A3D00804FDF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -410,7 +410,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.felipeweber.DolarNow;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Quantos Reais";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -428,7 +428,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.felipeweber.DolarNow;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Quantos Reais";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,7 +452,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DolarNow.app/DolarNow";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuantosReais.app/QuantosReais";
 			};
 			name = Debug;
 		};
@@ -474,14 +474,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DolarNow.app/DolarNow";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuantosReais.app/QuantosReais";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		55E1DD05246B4A3A00804FDF /* Build configuration list for PBXProject "DolarNow" */ = {
+		55E1DD05246B4A3A00804FDF /* Build configuration list for PBXProject "QuantosReais" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				55E1DD27246B4A3D00804FDF /* Debug */,
@@ -490,7 +490,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		55E1DD29246B4A3D00804FDF /* Build configuration list for PBXNativeTarget "DolarNow" */ = {
+		55E1DD29246B4A3D00804FDF /* Build configuration list for PBXNativeTarget "QuantosReais" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				55E1DD2A246B4A3D00804FDF /* Debug */,
@@ -499,7 +499,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		55E1DD2C246B4A3D00804FDF /* Build configuration list for PBXNativeTarget "DolarNowTests" */ = {
+		55E1DD2C246B4A3D00804FDF /* Build configuration list for PBXNativeTarget "QuantosReaisTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				55E1DD2D246B4A3D00804FDF /* Debug */,

@@ -51,7 +51,7 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionViewDolarNow.dequeueReusableCell(withReuseIdentifier: "dolarCollectionViewCell", for: indexPath) as! DolarNowCollectionViewCell
-        cell.coinValueLabel.text = tempCoinModel[indexPath.item].ask
+        cell.coinValueLabel.text = tempCoinModel[indexPath.row].ask
         cell.data = self.data[indexPath.item]
         return cell
     }

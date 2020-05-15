@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:DolarNow.xcodeproj">
+      location = "self:/Users/felipe/Documents/Alura Learn/iOS/DolarNow/QuantosReais.xcodeproj">
    </FileRef>
 </Workspace>
